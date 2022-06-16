@@ -2,6 +2,8 @@
 
 @section('content')
 
+<title>Restaurant APP</title>
+
 {{-- heading tags --}}
 <h1> Bootstrap yobolo</h1>
 <h2>Bootstrap yobolo</h2>
