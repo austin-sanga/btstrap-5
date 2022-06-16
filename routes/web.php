@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get("/lesson1", function(){
     return view('lesson1');
 });
+
+Route::get("/lesson2", function(){
+    return view('lesson2');
+});
