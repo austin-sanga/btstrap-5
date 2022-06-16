@@ -2,33 +2,50 @@
 
 @section('content')
 
-{{-- margin and padding --}}
-<div class="bg-primary m-1 p-1">Small margin and padding</div>
-<div class="bg-primary m-5 p-5">large margin and padding</div>
-<div class="bg-primary my-1 px-5 ">margin in y direction, padding in x direction</div>
-<div class="bg-primary ms-3 me-3 mt-3 mb-5 pt-5 ">margin and padding in different configuration, start and end, top and bottom </div>
+<title>Restaurant APP</title>
 
-{{-- borders --}}
-<div class="m-3 p-3 border">default border</div>
-<div class="m-3 p-3 border-top border-end">Individual border</div>
-<div class="m-3 p-3 border-start border-success">Border success colour at start</div>
-<div class="m-3 p-3 border-start border-danger border-5">Thicker border</div>
-<div class="m-3 p-3 rounded border border-5">rounded border</div>
-<div class="m-3 p-3 rounded-pill border border-5">rounded pill border</div>
+{{-- heading tags --}}
+<h1> Bootstrap yobolo</h1>
+<h2>Bootstrap yobolo</h2>
+<h3>Bootstrap yobolo</h3>
+<h2 class="h3">Bootstrap yobolo</h2>
 
-{{-- box shadow --}}
-<div class="m-3 p-3 shadow-sm">elements with small box shadow</div>
-<div class="m-3 p-3 shadow-lg">elements with large box shadow</div>
-<div class="m-3 p-3 shadow">elements with box shadow</div>
+{{-- diasplY HEADINGS --}}
+<h1 class="display-1">Diplay heading</h1>
+<h1 class="display-2">Diplay heading</h1>
+<h1 class="display-3">Diplay heading</h1>
+<p class="display-1">Mucho Gracias</p>
+
+{{-- lead text and allignment --}}
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+<p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p class="lead text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p class="lead text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>{{-- no need start by default --}}
+
+{{-- Text decoration $ font weight --}}
+<p class="text-decoration-underline">Lorem ipsum dolor sit.</p>
+<p class="text-decoration-line-through">Lorem ipsum dolor sit.</p>
+<p class="fw-bold">Lorem, ipsum dolor.</p>
+<small>Lorem ipsum dolor sit.</small>
+
+{{-- text colours --}}
+<p class="text-primary">Lorem ipsum dolor sit.</p>
+<p class="texrt-secondary">Lorem ipsum dolor sit.</p>
+<p class="text-info">Lorem ipsum dolor sit.</p>
+<p class="text-warning">Lorem ipsum dolor sit.</p>
+<p class="text-success">Lorem ipsum dolor sit.</p>
+<p class="text-danger">Lorem ipsum dolor sit.</p>
+<p class="text-muted">Lorem ipsum dolor sit.</p>
+
+{{-- bg colors --}}
+<p class="text-white bg-primary">Lorem ipsum dolor sit.</p>
+<p class="text-white bg-secondary">Lorem ipsum dolor sit.</p>
+<p class="text-white bg-danger">Lorem ipsum dolor sit.</p>
 
 
-{{-- font weight --}}
-<p class="fw-bold">Lorem, ipsum.</p>
-<p class="fw-bolder">Lorem, ipsum.</p>
-<p>Lorem, ipsum.</p>
-<p class="fw-light">Lorem, ipsum.</p>
-<p class="fst-italic">Lorem, ipsum.</p>
-<p class="fst-italic fw-light">Lorem, ipsum.</p>
+
 
 
 @stop
+
