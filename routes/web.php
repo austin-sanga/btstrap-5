@@ -33,4 +33,7 @@ Route::get("/lesson5", function(){
 Route::get("/lesson6", function(){
     return view('lesson6');
 });
- 
+
+Route::get("/lesson7", function(){
+    return view('lesson7');
+});
