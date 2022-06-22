@@ -37,3 +37,7 @@ Route::get("/lesson6", function(){
 Route::get("/lesson7", function(){
     return view('lesson7');
 });
+
+Route::get("/lesson8", function(){
+    return view('lesson8');
+});
