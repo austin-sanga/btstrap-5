@@ -13,7 +13,7 @@
 </section>
 
 
-{{-- main image $intro text --}}
+{{-- Main image & intro text --}}
 <section id="intro">
     <div class="container-lg">
         <div class="row justify-content-center align-items-center">
