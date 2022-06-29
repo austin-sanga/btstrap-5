@@ -8,9 +8,11 @@
 </style>
 
 {{-- navbar --}}
-<section id="intro">
-
-</section>
+<nav class="navbar">
+    <div class="container-xxl">
+        <a href="#intro"></a>
+    </div>
+</nav>
 
 
 {{-- Main image & intro text --}}
