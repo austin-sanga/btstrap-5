@@ -1,4 +1,4 @@
-@extends('layout')
+ @extends('layout')
 
 @section('content')
 <style>
@@ -8,9 +8,38 @@
 </style>
 
 {{-- navbar --}}
-<nav class="navbar">
+<nav class="navbar navbar-expand-md fixed-top navbar-light">
     <div class="container-xxl">
-        <a href="#intro"></a>
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-secondary">
+                Net-Ninja Pro the book
+            </span>
+        </a>
+        {{-- toggle button for mobile nav --}}
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        {{-- navbar links --}}
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Get in Touch</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a href="#pricing" class="btn btn-secondary">buy now</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
