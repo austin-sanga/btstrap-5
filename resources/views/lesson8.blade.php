@@ -8,7 +8,7 @@
 </style>
 
 {{-- navbar --}}
-<nav class="navbar navbar-expand-md fixed-top navbar-light">
+<nav class="navbar navbar-expand-md {{-- fixed-top --}} navbar-light">
     <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
             <span class="fw-bold text-secondary">
@@ -276,6 +276,59 @@
             </div>
         </div>
     </div>
+</section>
+
+{{-- contact form --}}
+{{--form-control, form-label, form-select, input-group, input-group-text  --}}
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Get in touch</h2>
+            <p class="lead">Questions to ask? Fill out the form to contact me directly....</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form>
+                    <label for="email" class="form-label">Email address:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="john@gmail.com">
+                    </div>
+
+
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Mario">
+                    </div>
+
+
+                    <label for="subject" class="form-label">What is your question about?</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><i class="bi bi-chat-right-dots-fill"></i></span>
+                        <select class="form-select" id="subject">
+                            <option value="pricing">pricing Query</option>
+                            <option value="content" selected>Content query</option>
+                            <option value="other">Other Query</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-floating mb-4 mt-5">
+                        <textarea
+                        id="querry" class="form-control" style="height: 140px"></textarea>
+                        <label for="query" class="form-lable">Your query...</label>
+                    </div>
+
+                    <div class="mb-4 rext-center">
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+     </div>
 </section>
 
 
