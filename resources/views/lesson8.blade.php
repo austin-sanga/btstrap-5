@@ -59,7 +59,10 @@
                 <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
-               <img class="img-fluid" src="/media/ebook-cover.png" alt="ebook cover">
+                {{-- tooltip --}}
+                <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+                    <img class="img-fluid" src="/media/ebook-cover.png" alt="ebook cover">
+                </span>
             </div>
         </div>
     </div>
@@ -294,6 +297,11 @@
                     <div class="mb-4 input-group">
                         <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
                         <input type="email" class="form-control" id="email" placeholder="john@gmail.com">
+
+                        {{-- tooltip --}}
+                        <span class="input-group-text">
+                            <span class="tt" data-bs-pacement="bottom" title="Enter email we can reply to"><i class="bi bi-question-circle text-muted"></i></span>
+                    </span>
                     </div>
 
 
@@ -301,6 +309,11 @@
                     <div class="input-group mb-4">
                         <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
                         <input type="text" class="form-control" id="name" placeholder="Mario">
+                         {{-- tooltip --}}
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-pacement="bottom" title="Preatty self explanatory really"><i class="bi bi-question-circle text-muted"></i></span>
+                        </span>
+
                     </div>
 
 
