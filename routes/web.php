@@ -41,3 +41,7 @@ Route::get("/lesson7", function(){
 Route::get("/lesson8", function(){
     return view('lesson8');
 });
+
+Route::get("/lesson20", function(){
+    return view('lesson20');
+});

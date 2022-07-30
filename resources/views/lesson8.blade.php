@@ -57,6 +57,10 @@
                 </h1>
                 <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+                 {{-- open sidebar / offcanvas --}}
+            <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                Explore my other book
+            </a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
                 {{-- tooltip --}}
@@ -343,6 +347,69 @@
             </div>
      </div>
 </section>
+
+{{-- get updates/ modal trigger --}}
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Stay in loop</h2>
+            <p class="lead">Get the latest updates as they happen ...</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+               <p class="text-muted my-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias consequatur harum enim in vel et facilis quaerat esse eligendi ab sit, accusamus, repellendus blanditiis officiis? Praesentium veritatis laborum consectetur doloremque, impedit adipisci? Amet numquam sit unde sunt autem similique ad quae repellat? Voluptatem velit, provident animi tempora eveniet obcaecati minus.
+               </p>
+               <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                Register for updates
+               </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{{-- model itself --}}
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Get the latest updates</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque vel excepturi voluptatum id minus fugiat enim assumenda ducimus incidunt autem. Necessitatibus laborum iusto numquam nobis impedit, molestiae libero adipisci possimus maiores ipsa est vel, eligendi hic expedita veniam, ducimus quasi.</p>
+                <label for="modal-email" class="form-label">Your email address:</label>
+                <input type="email" class="form-control" id="modal-email" placeholder="e.g. johns@email.com">
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- offcanvas --}}
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nisi blanditiis quisquam voluptatibus odit a voluptatem quaerat recusandae numquam quia error, eaque maiores nobis ad fuga adipisci! Cupiditate sunt, enim aspernatur cum dolores vel dicta voluptas, pariatur assumenda eaque facere veniam dolore nobis sint molestiae debitis. Laudantium blanditiis dignissimos sequi velit voluptatibus adipisci, quis sunt placeat excepturi iure corporis similique.</p>
+        {{-- drop down --}}
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+                Choose a book title
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li><a href="#" class="dropdown-item">Become a react super hero</a></li>
+                <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
+                <li><a href="#" class="dropdown-item">Levelling up your Next.js</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 @stop
